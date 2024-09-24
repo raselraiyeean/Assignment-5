@@ -16,27 +16,25 @@
     
         <header class="sticky top-0 z-50">
             <nav>
-                <div class="lg:px-20 md:px-28 navbar bg-[#f9f7f3]">
-                    <div class="navbar-start">
-    
-                        <a id="blog-btn" class="btn bg-green-400 px-7 font-extrabold text-xl">Blog</a>
+                <div class="flex flex-col lg:flex-row md:flex-row lg:space-x-40 md:space-x-3 lg:px-20 md:px-28 navbar bg-[#f9f7f3]">
+                <a id="blog-btn" class="btn bg-green-400 px-7 font-extrabold text-xl">Blog</a>
                         
                       
-                    </div>
-                    <div class="navbar-center lg:flex">
+                    
+                    
                       <div class="flex gap-4 items-center">
                         <img src="../assets/logo.png" alt="">
                       <h4 class="font-extrabold">Donate Bangladesh</h4>
-                      </div>
+                      
                     </div>
-                    <div class="navbar-end">
+                    
                         <div class="stats bg-[#f9f7f3]">
                             <div class="flex items-center stat">
                               <img src="../assets/coin.png" alt="">
                               <div class="font-normal stat-value"><span id="main-balance-of-donation-page">20000</span><span> BDT</span></div>
                             </div>
                           </div>
-                    </div>
+                    
             </div>
             <div class="flex justify-center mt-10 gap-3">
                 <button id="donate-money-button" class="bg-green-400 btn btn-lg font-extrabold text-xl">Donation</button>
@@ -66,7 +64,7 @@
                   <p> The recent floods in Noakhali have caused significant damage to homes  infrastructure. Your donation will help provide essential supplies and  to those affected by this disaster. Every contribution, big or small, makes  difference. Please join us in supporting the relief efforts and making a positive impact on the lives of those in need.</p>
                   <div class="card-actions justify-center">
                     <input id="donation-amount-for-naokhali" type="text" placeholder="Write Donation Amount" class="input input-bordered w-full" />
-                    <button id="noakhali-donate-button" onclick="my_modal_5.showModal()" class="btn bg-[#b4f461]  btn-block font-extrabold text-xl">Donate Now</button>
+                    <button id="noakhali-donate-button" class="btn bg-[#b4f461]  btn-block font-extrabold text-xl">Donate Now</button>
                   </div>
                 </div>
               </div>
@@ -89,7 +87,7 @@
                   <p> The recent floods in Feni have devastated local communities, leading to severe disruption and loss. Your generous donation will help provide immediate aid, including food, clean water, and medical supplies, to those affected by this calamity. Together, we can offer crucial support and help rebuild lives in the aftermath of this disaster. Every contribution counts towards making a real difference. Please consider donating today to assist those in urgent need.</p>
                   <div class="card-actions justify-center">
                     <input id="donation-amount-for-feni" type="text" placeholder="Write Donation Amount" class="input input-bordered w-full" />
-                    <button id="donate-btn-for-feni" onclick="my_modal_5.showModal()" class="btn bg-[#b4f461]  btn-block font-extrabold text-xl">Donate Now</button>
+                    <button id="donate-btn-for-feni" class="btn bg-[#b4f461]  btn-block font-extrabold text-xl">Donate Now</button>
                   </div>
                 </div>
               </div>
@@ -112,7 +110,7 @@
                   <p> The recent Quota movement has resulted in numerous injuries and significant hardship for many individuals. Your support is crucial in providing medical assistance, rehabilitation, and necessary supplies to those affected. By contributing, you help ensure that injured individuals receive the care and support they need during this challenging time. Every donation plays a vital role in alleviating their suffering and aiding in their recovery. Please consider making a donation to support these brave individuals in their time of need.</p>
                   <div class="card-actions justify-center">
                     <input id="aid-amount-injured-people" type="text" placeholder="Write Donation Amount" class="input input-bordered w-full" />
-                    <button id="aid-btn-for-quota-movement-injured" onclick="my_modal_5.showModal()" class="btn bg-[#b4f461]  btn-block font-extrabold text-xl">Donate Now</button>
+                    <button id="aid-btn-for-quota-movement-injured"  class="btn bg-[#b4f461]  btn-block font-extrabold text-xl">Donate Now</button>
                   </div>
                 </div>
               </div>
@@ -128,7 +126,7 @@
   <div class="modal-box">
     <h1 class="text-5xl font-extrabold">Congrats!</h1>
     <div class="grid justify-items-center">
-      <img src="assets/coin.png" class="pt-10" alt="">
+      <img src="../assets/coin.png" class="pt-10" alt="">
     </div>
     <p class="py-4">You have donated for mankind</p>
     <h1 class="text-3xl font-extrabold">Successfully</h1>
