@@ -110,7 +110,7 @@ document.getElementById('aid-btn-for-quota-movement-injured').addEventListener('
 
 // js to go blog page and return to home page
 document.getElementById('blog-btn').addEventListener('click', function() {
-    window.location.href = "../blog/index.html";
+    window.location.href = "index1.html";
 })
 
 
