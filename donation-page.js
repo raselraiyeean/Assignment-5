@@ -27,11 +27,13 @@ document.getElementById('noakhali-donate-button').addEventListener('click', func
             alert('Invalid Input!! Give a valid Input.');
         }
         else {
-            const newMainBalance = mainBalanceDonationPage - donationAmountForNoakhali;
+            my_modal_5.showModal();
+            document.getElementById('modal-btn').addEventListener('click',function() {
+                const newMainBalance = mainBalanceDonationPage - donationAmountForNoakhali;
             const newBalanceForNoakhaliDonationFund = donationBalanceForNoakhali + donationAmountForNoakhali;
             document.getElementById('main-balance-of-donation-page').innerText = newMainBalance;
             document.getElementById('donation-balance-for-Noakhali').innerText = newBalanceForNoakhaliDonationFund;
-            my_modal_5.showModal();
+            
             const historyContainer = document.getElementById('history-page');
             const historyText = document.createElement('p');
             let currentDate = new Date();
@@ -42,6 +44,8 @@ document.getElementById('noakhali-donate-button').addEventListener('click', func
             historyText.classList.add('card-body', 'border-2', 'my-5', 'font-semibold', 'text-2xl');
             
             historyContainer.appendChild(historyText);
+            })
+            
             
         }
     
@@ -60,11 +64,13 @@ document.getElementById('donate-btn-for-feni').addEventListener('click', functio
     }
 
     else {
-        const newMainBalance = mainBalanceDonationPage - donationAmountForFeni;
+        my_modal_5.showModal();
+        document.getElementById('modal-btn').addEventListener('click', function() {
+            const newMainBalance = mainBalanceDonationPage - donationAmountForFeni;
         const newBalanceForFeniDonationFund = donationBalanceForFeni + donationAmountForFeni;
         document.getElementById('main-balance-of-donation-page').innerText = newMainBalance;
         document.getElementById('donation-balance-for-feni').innerText = newBalanceForFeniDonationFund;
-        my_modal_5.showModal();
+       
         const historyContainer = document.getElementById('history-page');
             const historyText = document.createElement('p');
             let currentDate = new Date();
@@ -74,6 +80,8 @@ document.getElementById('donate-btn-for-feni').addEventListener('click', functio
             historyText.setAttribute("class", "card-normal");
             historyText.classList.add('card-body', 'border-2', 'my-5', 'font-semibold', 'text-2xl');
             historyContainer.appendChild(historyText);
+        })
+        
     }  
 })
 
@@ -90,7 +98,9 @@ document.getElementById('aid-btn-for-quota-movement-injured').addEventListener('
     }
 
     else {
-        const newMainBalance = mainBalanceDonationPage - donationAmountForInjuredPeople;
+        my_modal_5.showModal();
+        document.getElementById('modal-btn').addEventListener('click', function() {
+            const newMainBalance = mainBalanceDonationPage - donationAmountForInjuredPeople;
         const newBalanceForInjuredPeople = donationBalanceForInjuredPeople + donationAmountForInjuredPeople;
         document.getElementById('main-balance-of-donation-page').innerText = newMainBalance;
         document.getElementById('main-balance-for-injured-people').innerText = newBalanceForInjuredPeople;
@@ -104,6 +114,8 @@ document.getElementById('aid-btn-for-quota-movement-injured').addEventListener('
             historyText.setAttribute("class", "card-normal");
             historyText.classList.add('card-body', 'border-2', 'my-5', 'font-semibold', 'text-2xl');
             historyContainer.appendChild(historyText);
+        })
+        
     }  
 
 })
